@@ -1,0 +1,44 @@
+site_name: Kubernetes QuickStart
+site_description: Intro Documentation for Kubernetes
+
+theme:
+    name: material
+    logo: images/Credits/image1.png
+    favicon: images/Credits/image1.png
+    features:
+        - navigation.top
+  
+    palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: black
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: white 
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+    - search
+
+nav:
+    - Home: 'k8.md'
+    - FAQ: 'FAQ.md'
+    - 'Main Documentation':
+        - 'Documentation': 'Documentation.md'
+        - 'Items': 'Items.md'
+        - 'Music': 'Music.md'
+    - 'Changelogs':
+        - 'v2.1.0': 'changelogs/2_1_0_Changelog.md'
+        - 'Previous Changelogs': 'Changelogs.md'
+        - 'Credits': 'Credits.md'
